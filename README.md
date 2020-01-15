@@ -1,4 +1,4 @@
-# student directory#
+# student directory #
 
 The student direcory script allows you to manage the list of students enrolled at Villans Acdemy.
 
