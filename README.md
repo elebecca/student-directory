@@ -4,5 +4,5 @@ The student direcory script allows you to manage the list of students enrolled a
 
 ## How to use it ##
 
-'''shell
-ruby directory.rb'''
+```shell
+ruby directory.rb```
