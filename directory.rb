@@ -73,6 +73,14 @@ def save_students
   file.close # close file
 end
 
+def load_students
+  file = File.open("students.csv", "r") # open and reading the file
+  file.readlines.each do |line|
+  name, cohort = line.chomp.split(',') 
+    @students << {name: name, cohort: cohort.to_sym}
+  end
+  file.close
+end
 
 def print_footer
   puts "Overall, we have #{@students.count} great students"
