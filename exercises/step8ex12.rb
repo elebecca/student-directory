@@ -1,7 +1,3 @@
-#Right now if we have only one student, the user will see a message "Now we have 1 students",
-#whereas it should be "Now we have 1 student".
-#How can you fix it so that it used singular form when appropriate and plural form otherwise?
-
 def input_students
   puts "Please enter the names of the students"
   puts "To finish, just hit return twice"
@@ -34,6 +30,7 @@ def print(students)
 students.each do |student|
   puts "#{student[:name]} (#{student[:cohort]} cohort)"
 end
+ puts '' if students.count == 0
 end
 
 def print_footer(names)
