@@ -11,7 +11,7 @@ def input_students
     @students << {name: name, cohort: :november}
     puts "Now we have #{@students.count} students"
     # get another name from the user
-    name = STDIN.gets..chomp
+    name = STDIN.gets.chomp
   end
 end
 
